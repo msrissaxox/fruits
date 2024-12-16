@@ -36,16 +36,27 @@ app.get("/api/fruit/:fruitName", async (req, res) => {
     // Makes an HTTP GET request to the external API
     // 'await' pauses execution until the fetch is complete
     // Stores the response from the external API
-    const fruits = await response.json();
+    const data = await response.json();
 
         // Filter fruits based on the input name
-        const filteredFruit = fruits.find(
+        const filteredFruit = data.find(
           fruit => fruit.name.toLowerCase() === fruitName.toLowerCase()
         );
 
         if (filteredFruit) {
-          res.json(filteredFruit);
-          
+          res.json({
+// filteredFruit,
+
+    family: filteredFruit.family,
+    order: filteredFruit.order,
+    genus: filteredFruit.genus,
+    calories: filteredFruit.nutritions.calories,
+    fats: filteredFruit.nutritions.fat,
+    sugars: filteredFruit.nutritions.sugar,
+    carbs: filteredFruit.nutritions.carbohydrates,
+    protein: filteredFruit.nutritions.protein
+          })
+
         } else {
           res.status(404).json({ error: "Fruit not found" });
         }
