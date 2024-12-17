@@ -24,9 +24,9 @@ fruitButton.addEventListener("click", function () {
     .then((data) => {
       console.log(data);
       // Optional: do something with the data
-      family.textContent = data.family;
-      order.textContent = data.order;
-      genus.textContent = data.genus;
+      family.textContent = ` ${data.family}`;
+      order.textContent = ` ${data.order}`;
+      genus.textContent = ` ${data.genus}`;
       
       // Update nutritional information
       calories.textContent = ` ${data.calories}`;
