@@ -1,8 +1,14 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./src/*.html",     // For HTML files in the src folder
+    "./index.js"        // Your main JS file
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poiret: ['"Poiret One"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };

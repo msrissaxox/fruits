@@ -29,11 +29,11 @@ fruitButton.addEventListener("click", function () {
       genus.textContent = data.genus;
       
       // Update nutritional information
-      calories.textContent = data.calories;
-      fats.textContent = data.fats + ' g';
-      sugars.textContent = data.sugars + ' g';
-      carbs.textContent = data.carbs + ' g';
-      protein.textContent = data.proteins + ' g';
+      calories.textContent = ` ${data.calories}`;
+      fats.textContent = ` ${data.fats} + ' g'`;
+      sugars.textContent = ` ${data.sugars} + ' g'`;
+      carbs.textContent = `data.carbs + ' g'`;
+      protein.textContent = `data.proteins + ' g'`;
     })
     .catch((error) => console.error("Error:", error));
 
@@ -69,7 +69,7 @@ fruitInput.addEventListener("keypress", function (event) {
         sugars.textContent = data.sugars + ' g';
         carbs.textContent = data.carbs + ' g';
         protein.textContent = data.protein + ' g';
-
+ 
       })
       .catch((error) => console.error("Error:", error));
 

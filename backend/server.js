@@ -1,3 +1,4 @@
+import 'dotenv/config'; // API KEY
 import express from "express";
 import path from "path";
 import cors from "cors"; // Import cors
@@ -17,6 +18,9 @@ app.use(cors());
 
 // Serve static files from the src directory
 app.use(express.static("src"));
+
+//api key
+const apiKey = process.env.API_KEY;
 
 // Route to serve the main HTML page
 app.get("/", (req, res) => {
