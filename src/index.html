@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Finder</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="input.css" />
     <link rel="stylesheet" href="output.css" />
@@ -25,7 +27,9 @@
       >
         Learn about your favorite fruits!
       </p>
-      <div class="relative flex h-10 w-full min-w-[200px] max-w-[24rem] mx-auto">
+      <div
+        class="relative flex h-10 w-full min-w-[200px] max-w-[24rem] mx-auto"
+      >
         <button
           class="!absolute right-1 top-1 z-10 select-none rounded bg-indigo-500 py-2 px-4 text-center align-middle font-poiret text-xs uppercase text-white shadow-md shadow-indigo-500 transition-all hover:shadow-lg hover:shadow-indigo-500 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none peer-placeholder-shown:pointer-events-none peer-placeholder-shown:bg-blue-gray-500 peer-placeholder-shown:opacity-50 peer-placeholder-shown:shadow-none"
           type="button"
@@ -35,7 +39,7 @@
         </button>
         <input
           type="text"
-          class="peer  h-full w-full rounded-[7px] border border-blue-gray-200 bg-transparent px-3 py-2.5 pr-20 font-poiret text-sm text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-indigo-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+          class="peer h-full w-full rounded-[7px] border border-blue-gray-200 bg-transparent px-3 py-2.5 pr-20 font-poiret text-sm text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
           placeholder="Enter name of fruit"
           id="nameOfFruit"
           required
@@ -45,26 +49,27 @@
       <h4
         class="mt-2 text-2xl leading-8 text-gray-900 sm:text-3xl sm:leading-9"
       >
-      <p class="font-poiret" id="nameOfFruit"></p>
-      <img id="image" src="">
-      <!--Family-->  
-      <div class="flex gap-2 font-poiret">
-      <p>Family: &nbsp; </p>
-        <p id="family" class="font-poiret"></p>
+        <p class="font-poiret" id="fruitNameInputted"></p>
+
+        <img id="image" src="" />
+        <!--Family-->
+        <div class="flex gap-2 font-poiret">
+          <p>Family: &nbsp;</p>
+          <p id="family" class="font-poiret"></p>
         </div>
 
         <!--Order-->
         <div class="flex gap-2 font-poiret">
-        <p>Order: &nbsp; </p>
-        <p id="order" class="font-poiret"> </p>
+          <p>Order: &nbsp;</p>
+          <p id="order" class="font-poiret"></p>
         </div>
 
         <!--Genus-->
-<div class="flex gap-2 font-poiret">
-        <p>Genus: &nbsp;</p>
-        <p id="genus" class="font-poiret"></p>
-</div>
-      </h4> 
+        <div class="flex gap-2 font-poiret">
+          <p>Genus: &nbsp;</p>
+          <p id="genus" class="font-poiret"></p>
+        </div>
+      </h4>
 
       <ul class="mt-8 space-y-3 font-poiret">
         <li class="flex items-start lg:col-span-1">
