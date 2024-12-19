@@ -47,28 +47,28 @@ Ensure you have the following installed on your system:
 
 ### 1. Clone the Repository
 
-Clone the repository to your local machine using the following command:
+- Clone the repository to your local machine using the following command:
 
--```bash
--git clone https://github.com/your-username/fruit-finder.git
+- ```bash
+- git clone https://github.com/your-username/fruit-finder.git
 
 ### 2. Navigate to the Project Directory
--move into the project folder
--cd fruit-finder
+- move into the project folder
+- cd fruit-finder
 
 ### 3.  Install Dependencies
--npm install
+- npm install
 
 ### 4. Build Tailwind
--If you're using a preconfigured setup for Tailwind CSS, ensure you generate the output.css file by running:
--npx tailwindcss -i ./src/input.css -o ./output.css --watch
+- If you're using a preconfigured setup for Tailwind CSS, ensure you generate the output.css file by running:
+- npx tailwindcss -i ./src/input.css -o ./output.css --watch
 
 ### 5. Open the Project in Your Browser
--You can either:
--Open the index.html file directly in your browser, or
--Run a local development server (e.g., Live Server for VS Code).
+- You can either:
+- Open the index.html file directly in your browser, or
+- Run a local development server (e.g., Live Server for VS Code).
 
 ### 6. Usage
--Open the application in your web browser.
--Enter the name of a fruit in the input field.
--Click the "Click" button to fetch and display the fruit's information.
+- Open the application in your web browser.
+- Enter the name of a fruit in the input field.
+- Click the "Click" button to fetch and display the fruit's information.
