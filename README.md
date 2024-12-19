@@ -48,8 +48,7 @@ Ensure you have the following installed on your system:
 ### 1. Clone the Repository
 
 - Clone the repository to your local machine using the following command:
-
-- ```bash
+- bash
 - git clone https://github.com/your-username/fruit-finder.git
 
 ### 2. Navigate to the Project Directory
